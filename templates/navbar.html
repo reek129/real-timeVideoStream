@@ -1,0 +1,24 @@
+<!-- navbar.html -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="navbar-brand">
+      <a href="{{ url_for('index') }}" class="d-inline-block mr-3">
+        <img src="{{ url_for('static', filename='Clemson_University_Logo.png') }}" width="30" height="30" alt="Clemson Logo">
+        Home
+      </a>
+      <a href="https://www.clemson.edu/cecas/tracr/index.html" target="_blank" class="d-inline-block">
+        <img src="{{ url_for('static', filename='tracr-logo.png') }}" width="30" height="30" alt="TRACR Logo">
+        TRACR
+      </a>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a href="{{ url_for('index') }}" class="btn btn-outline-primary" role="button">Real-Time Video</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
